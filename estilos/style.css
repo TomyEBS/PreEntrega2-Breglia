@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(184, 233, 228);
+    margin: 0;
+}
+
+a{
+    font-family: inherit;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    margin: 10px;
+}
+/*Estilos del header*/
+ 
+.color-header{
+    background-color:rgb(233, 132, 149);
+}
+
+.logo img{
+    padding: 0;
+    margin-right: 10px;
+    width: 10%;
+    height: 15%;
+}
+ 
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    background-color:  rgb(229, 182, 190);
+ padding: 10px;
+ height: 250px;
+ background-size: cover;
+}
+
+
+.button{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color:whitesmoke;
+    background-color: pink;
+    margin-top: 300px;
+    margin-left: 500px;
+}
+.button-position :hover{
+background-color: rgb(243, 171, 183);
+color: white;
+box-shadow: 2px 2px 5px 0px black;
+}
+
+.bombones{
+    width: 15%;
+    height: 65%;
+    margin: 60px;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    "carousel-slide"
+    "button";
+}
+
+main .carousel-slide{
+    grid-area: carousel-slide;
+}
+
+main .carousel-slide img{
+     height: 20rem;
+     margin-top: 170px;
+     margin-left: 500px;
+
+}
+
+main .button{
+    grid-area: button;      
+}
+
+/*Estilos del footer*/
+ .pie-pagina{
+    width: 100%;
+    height:  11rem;
+    background-color: rgb(233, 132, 149);
+    position: absolute;
+    bottom: 0;
+ }
+
+ .pie-pagina .grupo-1{
+    width: 100%;
+    min-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+ }
+
+ .pie-pagina .grupo-1 .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .pie-pagina .grupo-1 .box h2{
+    color: whitesmoke;
+    margin-bottom:25px;
+    font-size: 20px;
+    margin-top: 2rem;
+ }
+ 
+ .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: whitesmoke;
+    margin-right: 10px;
+    background-color: rgb(229, 182, 190);
+    text-align: center;
+ }
+
+ .pie-pagina .derechos{
+background-color:  rgb(229, 182, 190);
+padding: 12px 10px;
+text-align: center;
+color: whitesmoke;
+ }
+
+ .pie-pagina .derechos small{
+    font-size: 15px;
+ }
+
+ .form{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 400px;
+    border-radius: 2em;
+    padding: 3em 1em;
+}
+ 
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+} 
+
+.form-title{
+    text-align: center;
+    font-size: 1.9em;
+    margin-bottom: .4em;
+}
+
+ .form-input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 16px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(180, 170, 170);
+ }
+
+ .form-input_message{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8em 32px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(180, 170, 170);
+    resize: none;
+    margin-bottom: 1.5em;
+ }
+ 
+ .form-buttom{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgb(53, 53, 255);
+    color: whitesmoke;
+    border: none;
+    font-weight: 300;
+    padding: 16px 0;
+    border-radius: 3.2px;
+    font-weight: 500;
+ }
+
+ .contacto{
+    text-decoration: underline blue;
+    font-family: inherit;
+    font-size: medium;
+    color: blue;
+ }
+
+ /*Productos estilos*/
+
+.body-pro{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(184, 233, 228);
+    margin: 0;
+    position: relative;
+   padding-bottom: 15rem;
+    min-height: 100vh;
+}
+
+.titulo2{
+    background-color:rgb(229, 182, 190);
+ 
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+}
+
+.productos img{
+    margin: 70px;
+    height: 30rem;
+    width: 30rem;
+}
+
+/*estilos card*/
+.color-boton{
+    background-color: rgb(243, 180, 191);
+}
+.card{
+margin-top: 20px;
+
+}
+.card img{
+    height: 200px;
+    width: 200px;
+   
+}
+/*Media query*/
+@media (max-width:500px){
+    .titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        background-color:  rgb(229, 182, 190);
+     padding: 10px;
+     height: 23rem;
+     background-size: cover;
+    }
+
+
+.pie-pagina{
+    display: none;
+}
+
+.carousel-slide{
+    display: none;
+}
+ 
+.button{
+    display: inline;
+}
+
+.card{
+    margin-left: 50px;
+}
+}
