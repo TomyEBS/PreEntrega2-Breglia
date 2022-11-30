@@ -1,0 +1,41 @@
+.body-pro{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(184, 233, 228);
+    margin: 0;
+    position: relative;
+   padding-bottom: 15rem;
+    min-height: 100vh;
+}
+
+.titulo2{
+    background-color:rgb(229, 182, 190);
+ 
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+}
+
+.productos img{
+    margin: 70px;
+    height: 30rem;
+    width: 30rem;
+}
+
+/*estilos card*/
+.color-boton{
+    background-color: rgb(243, 180, 191);
+}
+.card{
+margin-top: 20px;
+
+}
+.card img{
+    height: 200px;
+    width: 200px;
+   
+}
